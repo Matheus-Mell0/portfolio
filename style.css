@@ -19,7 +19,6 @@ scroll-behavior: smooth;
     --vidro: rgba(255, 255, 255, 0.1);
 }
 
-   
 body {
 
     background-color: var(--escuro);
