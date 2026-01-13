@@ -4,10 +4,12 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 html {
 scroll-behavior: smooth;
     scroll-padding-top: 90px;
 }
+
 :root {
     --primaria: #4f46e5;
     --secundaria: #7c3ead; 
@@ -16,10 +18,12 @@ scroll-behavior: smooth;
     --claro: #e2e8f0;
     --vidro: rgba(255, 255, 255, 0.1);
 }
+
 body {
     background-color: var(--escuro);
     color: antiquewhite;
 }
+
 .navegacao {
     position: fixed;
     top: 0;
@@ -41,6 +45,7 @@ body {
 position: relative;
 padding: 0.5rem 0;
 }
+
 .menu-link::after {
     content: '';
     height: 2px;
@@ -51,9 +56,11 @@ padding: 0.5rem 0;
     background: linear-gradient(to right, var(--primaria), var(--secundaria));
     transition: width 0.5s ease
 }
+
 .menu-link:hover::after {
     width: 100%;
 }
+
 .cabeçalho {
 min-height: 100vh;
 display: flex;
@@ -61,6 +68,7 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 }
+
 .foto-perfil {
     width: 300px;
     height: 300px;
@@ -70,25 +78,30 @@ flex-direction: column;
    object-fit: cover;
    animation: flutuar 5s ease-in-out infinite;
 }
+
 h1 {
     font-size: 3.5rem;
     color: var(--primaria);
     font-weight: bold;
     margin: 10px;
 }
+
 .area-desejada {
 font-size: 1.5rem;
 color: var(--claro);
 }
+
 .sobre {
 padding: 6rem 2rem;
 }
+
 .sobre-titulo {
 font-size: 3rem;
 color: var(--claro);
 text-align: center;
 margin-bottom: 20px;
 }
+
 .sobre-caixa {
 padding: 1rem;
 max-width: 800px;
@@ -98,10 +111,12 @@ border: 1px solid var(--vidro);
 backdrop-filter: blur(10px);
 background: rgba(255, 255, 255, 0.05);
 }
+
 .sobre-paragrafo {
 text-align: center;
 font-size: 1rem;
 }
+
 .logos {
     display: flex;
     justify-content: center;
@@ -112,29 +127,36 @@ font-size: 1rem;
     padding: 0;
     margin: 0px 0 0 0;
 }
+
 .logos li {
     list-style: none;
 }
+
 .logos img {
     width: 30px;
     height: 30px;
     transition: all 0.3s ease-in-out;
     border-radius: 50%;
 }
+
 .logos img:hover {
     transform: scale(1.2);
     background-color: rgba(124, 62, 173, 0.3);
     box-shadow: 0 0 20px var(--secundaria);
 }
+
 .projetos {
 padding: 6rem 2rem;
+
 }
+
 .projetos-titulo {
 text-align: center;
 font-size: 2.5rem;
 color: var(--claro);
 margin-bottom: 20px
 }
+
 .projetos-card:hover{
 box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
 transform: translateY(-10px) scale(1.03);
@@ -146,6 +168,7 @@ transform: translateY(-10px) scale(1.03);
 color: rgba(226, 232, 240, 0.8);
 line-height: 1.25rem;
 }
+
 .info-projetos {
 margin-bottom: 4px;
 }
@@ -155,12 +178,15 @@ grid-template-columns: repeat(3, 1fr);
 gap: 2rem;
 max-width: 1200px;
 margin: 0 auto;
+
 }
+
 .projeto-imagem {
 height: 200px;
 width: 100%;
 object-fit: cover;
 }
+
 .projetos-card {
 background-color: rgba(255, 255, 255, 0.05);
 border-radius: 14px; 
@@ -170,14 +196,18 @@ overflow: hidden;
 transition: all 0.5s ease;
 cursor: pointer;
 }
+
 .contato {
 padding: 6rem 2rem;
+
 }
+
 .contato-titulo {
 text-align: center;
 font-size: 2.5rem;
 margin-bottom: 20px
 }
+
 .formulario {
 max-width: 600px;
 margin: 0 auto;
@@ -187,6 +217,7 @@ backdrop-filter: blur(5px);
 padding: 2rem;
 border: 1px solid var(--vidro);
 }
+
 .campo-form {
 width: 100%;
 padding: 1rem;
@@ -196,13 +227,17 @@ color: var(--claro);
 border: var(--vidro);
 outline: none;
 }
+
 .campo-form:focus {
 border-color: var(--secundaria);
 box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
 }
+
+
 .grupo-form {
 margin-bottom: 1.5rem;
 }
+
 .botao-form {
     color: var(--claro);
     background: linear-gradient(45deg, var(--primaria), var(--secundaria));
@@ -214,10 +249,12 @@ margin-bottom: 1.5rem;
     width: 100%;
     transition: all 0.5s ease;
 }
+
 .botao-form:hover {
     transform: translateY(-4px);
     box-shadow: 0 5 15px rgba(79, 70, 229, 0.4);
 }
+
 .particulas {
     position: fixed;
     top: 0;
@@ -231,10 +268,14 @@ radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%),
 radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%),
 var(--maisescuro);
 }
+
 @keyframes flutuar {
     0%, 100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-20px);
     }
+
+}
