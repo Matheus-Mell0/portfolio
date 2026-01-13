@@ -4,10 +4,10 @@
 
 ---
 ## 📸 Preview
-![preview do portfolio](img/portfolio-1.png)
-![preview do portfolio](img/portfolio-2.png)
-![preview do portfolio](img/portfolio-3.png)
-![preview do portfolio](img/portfolio-4.png)
+![preview do portfolio](portfolio-1.png)
+![preview do portfolio](portfolio-2.png)
+![preview do portfolio](portfolio-3.png)
+![preview do portfolio](portfolio-4.png)
 
 ---
 
