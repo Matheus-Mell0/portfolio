@@ -3,6 +3,11 @@
 🚀 Portfólio pessoal desenvolvido com HTML, CSS e foco em design moderno e responsivo.
 
 ---
+
+## 🔗 Acesse o site aqui! https://matheus-mell0.github.io/portfolio/
+
+---
+
 ## 📸 Preview
 ![preview do portfolio](img/portfolio-1.png)
 ![preview do portfolio](img/portfolio-2.png)
