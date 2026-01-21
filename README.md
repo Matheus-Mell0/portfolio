@@ -1,6 +1,6 @@
 # 🌐 Portfólio | Matheus Mello
 
-🚀 Portfólio pessoal desenvolvido com HTML, CSS e foco em design moderno e responsivo.
+🚀 Portfólio pessoal desenvolvido com HTML, CSS e JavaScript, foco em design moderno e responsivo.
 
 ---
 
