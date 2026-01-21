@@ -31,7 +31,7 @@
     </nav>
 
     <main id="inicio" class="cabeçalho">
-        <img src="perfil-matheus.jpg" alt="foto matheus mello" class="foto-perfil">
+        <img src="img/perfil-matheus.jpg" alt="foto matheus mello" class="foto-perfil">
         <h1>Matheus Mello</h1>
         <p class="area-desejada">Desenvolvedor Backend</p>
     </main>
@@ -48,22 +48,22 @@
     <div class="logos">
         <ul>
             <li>
-                <img src="html.svg" alt="html-icon">
+                <img src="img/html.svg" alt="html-icon">
             </li>
         </ul>
         <ul>
             <li>
-                <img src="css.svg" alt="css-icon">
+                <img src="img/css.svg" alt="css-icon">
             </li>
         </ul>
         <ul>
             <li>
-                <img src="java-logo.webp" alt="java-icon">
+                <img src="img/java-logo.webp" alt="java-icon">
             </li>
         </ul>
         <ul>
             <li>
-                <img src="mysql.png" alt="mysql-icon">
+                <img src="img/mysql.png" alt="mysql-icon">
             </li>
         </ul>
 
@@ -76,29 +76,54 @@
         <div class="projetos-caixa">
 
             <div class="projetos-card">
-                <img src="novos-projetos-em-breve.png" alt="projeto 1 " class="projeto-imagem">
+                <a href="https://github.com/Matheus-Mell0/Calculadora-em-java" target="_blank">
+
+                <img src="img/calculadora33.jpg" alt="Projeto 1 " class="projeto-imagem">
+
                 <div class="caixa-texto-proj">
-                    <h3 class="info-projetos">Projetos (em desenvolvimento) </h3>
-                    <p class="paragrafo-projetos"> Atualmente estou estudando e desenvolvendo novos projetos práticos,
-                        em
-                        breve, novos projetos estarão aqui!</p>
-                </div>
+                    <h3 class="info-projetos">Calculadora</h3>
+                    <p class="paragrafo-projetos">Calculadora deselvolvida em Java, com foco em lógica de programação e boas práticas. O projeto realiza operações matemáticas básicas por meio de uma interface simples.</p>
+                </div> 
+                
+            </a>
             </div>
     </section>
 
     <section id="contato" class="contato">
         <h2 class="contato-titulo">Entre em contato</h2>
-        <form class="formulario" id="formulario">
+        <form class="formulario" id="formulario"onsubmit="EnviarWhatsApp(event)">
             <div class="grupo-form">
-                <input placeholder="Nome" class="campo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
             </div>
 
             <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua mensagem"></textarea>
+                <textarea class="campo-form" placeholder="Digite sua mensagem" rows="5" id="mensagem"></textarea>
             </div>
-            <button type="submit" class="botao-form">Enviar WhatsApp></button>
+            <button type="submit" class="botao-form">Enviar WhatsApp</button>
         </form>
     </section>
+    
+<script>
+function EnviarWhatsApp(event) {
+event.preventDefault();
+
+const nome = document.getElementById('nome').value;
+const mensagem = document.getElementById('mensagem').value;
+const telefone = '5511947820138'
+
+const texto = `Olá! me chamo ${nome}, ${mensagem}`
+const msgFormatada = encodeURIComponent(texto)
+
+const url = `https://wa.me/${telefone}?text=${msgFormatada}`
+
+window.open(url, '_blank')
+
+
+}
+
+
+</script>
+
 </body>
 
 </html>
