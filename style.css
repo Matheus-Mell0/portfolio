@@ -284,3 +284,38 @@ var(--maisescuro);
     }
 
 }
+
+
+@media (max-width: 768px) {
+    .menu {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .foto-perfil {
+        width: 200px;
+        height: 200px;
+    }
+
+    .projetos-caixa {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre, .projetos, .contato {
+        padding: 3rem 1.5rem;
+    }
+
+    .sobre-titulo, .projetos-titulo, .contato-titulo {
+        font-size: 2rem;
+    }
+    
+    .navegacao {
+        padding: 1rem;
+    }
+}
+
